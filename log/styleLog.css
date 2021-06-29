@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 20rem;
+    margin: 78px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.container input{
+    width: 85%;
+    display: block;
+    margin: auto;
+    padding: 6px;
+    margin-top: 27px;
+    outline: none;
+}
+
+.container button{
+    display: block;
+    margin: auto;
+    padding: 5px 20px;
+    color: white;
+    background-color: skyblue;
+    border-radius: 11px;
+    margin-top: 20px;
+}
+.container button:hover{
+    background-color: cornflowerblue;
+}
+.container h3{
+    text-align: center;
+    padding: 20px;
+}
+.container h3 a{
+    text-decoration: none;
+}
+
+.message{
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+}
