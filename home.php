@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="main">
-        <div class="heading-content">PORTFOLIO</div>
+        <div class="heading-content">ECOMMERCE</div>
         
         <div class="username">
             <img src="<?php  echo 'log/'.$_SESSION['photo']?>" width="50px"  alt="profile pic">
