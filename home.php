@@ -84,7 +84,7 @@
         align-items: center;
         height: 89px;
         text-align: center;
-        background: teal;
+        background: purple;
         color: white;
     }
     .heading-content{
@@ -101,7 +101,7 @@
     .username-content h3,.username-content h3 a{
         color:white;
         padding: 5px;
-        background-color:teal;
+        background-color:purple;
     }
 
     .log{

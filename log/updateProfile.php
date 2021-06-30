@@ -95,7 +95,7 @@
 
 <style>
     .nav{
-        background-color: teal;
+        background-color: purple;
         color: white;
         display: flex;
         justify-content: center;

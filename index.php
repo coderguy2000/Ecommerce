@@ -71,7 +71,7 @@
         align-items: center;
         height: 89px;
         text-align: center;
-        background: teal;
+        background: purple;
         color: white;
     }
     .heading-content{
