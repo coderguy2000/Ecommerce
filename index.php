@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="main">
-        <div class="heading-content">PORTFOLIO</div>
+        <div class="heading-content">ecommerce</div>
         <div class="username">Hi</div>
         <div class="log"><a href="log/login.php">Login</a><a href="log/register.php">Register</a></div>
     </div>
