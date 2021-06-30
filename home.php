@@ -8,9 +8,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Testing</title>
 </head>
@@ -18,15 +15,17 @@
     <div class="main">
         <div class="heading-content">Ecommerce</div>
         
-        <div class="username">
-            <img src="<?php  echo 'log/'.$_SESSION['photo']?>" width="50px"  alt="profile pic">
-            <?php echo "Hi ".$_SESSION['username']."  ";?>
-            <i class="fa fa-chevron-right"></i>
-        </div>
-        
-        <div class="username-content">
-            <h3><a href="log/updateProfile.php">Dashboard</a></h3>
-            <h3>Profile</h3>
+        <div class="profile">
+            <div class="username">
+                <img src="<?php  echo 'log/'.$_SESSION['photo']?>" width="50px"  alt="profile pic">
+                <?php echo "Hi ".$_SESSION['username']."  ";?>
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            
+            <div class="username-content">
+                <h3><a href="log/updateProfile.php">Dashboard</a></h3>
+                <h3>Profile</h3>
+            </div>
         </div>
         <div class="log"><a href="log/logout.php">Logout</a></div>
     </div>
@@ -92,22 +91,24 @@
         font-size: 36px;
     }
     .username{
-        flex:1;
+        flex:2;
     }
     .username-content{
-        margin-left: -21px;
-        margin-top: 22px;
+        flex: 1;
     }
     .username-content h3,.username-content h3 a{
         color:white;
         padding: 5px;
         background-color:purple;
     }
+    .profile{
+        display: flex;
+        flex: 2;
+        align-items: center;
+    }
 
     .log{
         flex:2;
-        display: flex;
-        justify-content: space-evenly;
     }
     .log a{
         color: white;
