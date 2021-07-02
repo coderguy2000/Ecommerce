@@ -64,11 +64,13 @@
     </div>
     <div class="container">
         <form action="login.php" method="post">
+            <h3> Username </h3>
             <input type="text" name="username" id="username" placeholder="Enter your username" required>
+            <h3> Password </h3>
             <input type="password" name="password" id="password" placeholder = "Enter your password" required>
             <button type="submit">Log in</button>
         </form>
-        <h3>If you didn't have account <a href="register.php">Create Account</a></h3>
+        <h3 class="diff-page">If you didn't have account <a href="register.php">Create Account</a></h3>
     </div>
 </body>
 </html>

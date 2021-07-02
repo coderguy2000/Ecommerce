@@ -72,18 +72,21 @@
     <div class="main">
         <div class="container">
             <form action="updateProfile.php" method="post">
+                <h3> Username </h3>
                 <input type="text" name="username" id="username" value="<?php
                     echo $_SESSION['username'];
                 ?>"required>
+                <h3> Email </h3>
                 <input type="email" name="email" id="email" placeholder="Enter your email" value="<?php
                     echo $_SESSION['email'];
                 ?>" required>
+                <h3> Password </h3>
                 <input type="text" name="password" id="password" placeholder="Enter your password" value="<?php
                         echo $_SESSION['password'];
                 ?>"required>
                 <button type="submit">Save Changes</button>
             </form>
-            <h3>Go to <a href="../home.php">Home page</a></h3>
+            <h3 class="diff-page">Go to <a href="../home.php">Home page</a></h3>
         </div>
         <div>
             <img src="images/update.svg" alt="Update">

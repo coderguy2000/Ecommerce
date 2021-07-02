@@ -73,13 +73,17 @@
     </div>
     <div class="container">
         <form action="register.php" method="post" enctype="multipart/form-data">
-            <input type="text" name="username" id="username" placeholder="Enter your username" required>
+            <h3> Username </h3>
+            <input type="text" name="Username" id="username" placeholder="Enter your username" required>
+            <h3> Email </h3>
             <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <h3> Password </h3>
             <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            <h3> Profile Photo </h3>
             <input type="file" name="photo">
             <button type="submit">Create Account</button>
         </form>
-        <h3>If you have account <a href="login.php">Log in</a></h3>
+        <h3 class="diff-page">If you have account <a href="login.php">Log in</a></h3>
     </div>
 </body>
 </html>

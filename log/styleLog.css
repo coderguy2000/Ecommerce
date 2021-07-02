@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .container{
     width: 20rem;
     margin: 78px auto;
@@ -12,12 +11,16 @@
     border-radius: 20px;
 }
 
+.container h3{
+    padding: 20px 0px 7px 36px;
+}
+
 .container input{
     width: 85%;
     display: block;
     margin: auto;
     padding: 6px;
-    margin-top: 27px;
+    margin-top: 5px;
     outline: none;
 }
 
@@ -33,9 +36,8 @@
 .container button:hover{
     background-color: cornflowerblue;
 }
-.container h3{
+.diff-page{
     text-align: center;
-    padding: 20px;
 }
 .container h3 a{
     text-decoration: none;
