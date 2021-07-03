@@ -23,8 +23,8 @@
             </div>
             
             <div class="username-content">
-                <h3><a href="log/updateProfile.php">Dashboard</a></h3>
-                <h3>Profile</h3>
+                <h3><a href='blogs/blogs.php'>Dashboard</a?</h3>
+                <h3><a href="log/updateProfile.php">Profile</a></h3>
             </div>
         </div>
         <div class="log"><a href="log/logout.php">Logout</a></div>

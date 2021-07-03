@@ -100,9 +100,6 @@
         height: 89px;
         font-size: 30px;
     }
-    .container{
-        width: 31rem;
-    }
     .main{
         display:flex;
         align-items: center;
