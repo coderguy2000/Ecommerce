@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    background-color: #e8e8e8;
+}
 
 .container{
     width: 525px;
@@ -15,14 +18,27 @@
     padding: 20px 0px 7px 36px;
 }
 
-.container input{
+input{
     width: 85%;
+    height:35px;
     display: block;
     margin: auto;
     padding: 6px;
     margin-top: 5px;
     outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #e8e8e8;
+    box-shadow:  5px 5px 10px #c5c5c5,
+                -5px -5px 10px #ffffff;
 }
+input:hover{
+    border-radius: 5px;
+background: #e8e8e8;
+box-shadow: inset 5px 5px 10px #c5c5c5,
+            inset -5px -5px 10px #ffffff;
+}
+
 
 .container button{
     display: block;
@@ -35,6 +51,7 @@
 }
 .container button:hover{
     background-color: cornflowerblue;
+    
 }
 .diff-page{
     text-align: center;
@@ -51,6 +68,6 @@
 
 @media(max-width:850px){
     .container{
-        width: 345px;
+        width: 354px;
     }
 }

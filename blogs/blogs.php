@@ -1,5 +1,4 @@
-<?php
-    
+<?php    
     session_start();
     $server='localhost';
     $Username='root';
@@ -14,6 +13,7 @@
     
         $s = "insert into blog(username, title, content, dt) values ('$username','$title','$content',current_timestamp())";
         mysqli_query($con,$s);
+        header('location: #');
     }
 ?>
 
@@ -40,39 +40,39 @@
             <button type="submt"><i class="fa fa-plus-circle"></i></button>
         </form>
     </div>
+
+    <?php
+        $s = "select * from blog where username='$_SESSION[username]'";
+        $res = mysqli_query($con,$s);
+    ?>
+
+    <div class="blogs">
+        <?php
+            while($row = $res->fetch_assoc()){
+        ?>
+
+        <div class="blog-container">
+            <h3><?php echo $row['title']?> </h3>
+            <p><?php echo $row['content']?> </p>
+            <div class="functionality">
+                <div class="edit">Edit</div>
+                <div class="delete">Delete</div>
+            </div>
+        </div>
+
+        <?php
+            }
+        ?>
+    </div>
 </body>
 </html>
 
-
-<?php
-    $s = "select * from blog where username='$_SESSION[username]'";
-    $res = mysqli_query($con,$s);
-?>
-
-<div class="blogs">
-    <?php
-        while($row = $res->fetch_assoc()){
-    ?>
-
-    <div class="blog-container">
-        <h3><?php echo $row['title']?> </h3>
-        <p><?php echo $row['content']?> </p>
-        <div class="functionality">
-            <div class="edit">Edit</div>
-            <div class="delete">Delete</div>
-        </div>
-    </div>
-
-    <?php
-        }
-    ?>
-</div>
-
-
-
 <style>
+    body{
+        background:#e8e8e8;
+    }
     .main{
-        width:500px;
+        width: 425px;
         border:1px solid purple;
         margin:auto;
         margin-top:50px;
@@ -82,14 +82,33 @@
     }
 
     input{
+        height:30px;
         width:100%;
-        border:1px solid black;
-        height:25px;
-        margin-bottom:20px;
+        margin:10px 0px 20px 0px;
+        padding: 10px;
+        border:none;
+        outline:none;
+        border-radius: 5px;
+        background: #e8e8e8;
+        font-size: 20px;
+        box-shadow:  5px 5px 10px #c5c5c5,
+             -5px -5px 10px #ffffff;
     }
     textarea{
         width:100%;
         outline:none;
+        font-size: 20px;
+        padding: 10px;
+        border:none;
+        margin-top:10px;
+        border-radius: 15px;
+        background: #e8e8e8;
+        box-shadow:  5px 5px 10px #c5c5c5,
+             -5px -5px 10px #ffffff;
+    }
+    input:hover,textarea:hover{
+        box-shadow: inset 5px 5px 10px #c5c5c5,
+            inset -5px -5px 10px #ffffff;
     }
     button{
         position:absolute;
@@ -101,7 +120,7 @@
     .fa{
         font-size: 50px;
         color: purple;
-        background: white; 
+        background: #e8e8e8; 
         cursor: pointer;
     }
     .blogs{
@@ -111,12 +130,17 @@
     }
 
     .blog-container{
-        border: 2px solid #ece5e5;;
+        border: 2px solid #6fc0bb;
+        border-radius: 12px;
         width: 314px;
         min-height: 148px;
         height: auto;
         margin: 50px;
         position: relative;
+        border-radius: 15px;
+        background: linear-gradient(145deg, #d1d1d1, #f8f8f8);
+        box-shadow:  5px 5px 10px #c5c5c5,
+             -5px -5px 10px #ffffff;
     }
     .blog-container h3{
         color: #6f258d;

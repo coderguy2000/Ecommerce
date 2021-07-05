@@ -1,5 +1,6 @@
 <?php
     session_start();
+    
     if(isset($_POST['username'])){
         //to going another page after click submit
 
@@ -74,7 +75,7 @@
     <div class="container">
         <form action="register.php" method="post" enctype="multipart/form-data">
             <h3> Username </h3>
-            <input type="text" name="Username" id="username" placeholder="Enter your username" required>
+            <input type="text" name="username" id="username" placeholder="Enter your username" required>
             <h3> Email </h3>
             <input type="email" name="email" id="email" placeholder="Enter your email" required>
             <h3> Password </h3>
